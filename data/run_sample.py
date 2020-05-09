@@ -97,8 +97,8 @@ else:
     os.chdir(build_dir)
 
     # Build
-    subprocess.run(['cmake', args.srcdir], check=True)
-    subprocess.run(['cmake', '--build', '.'], check=True)
+    subprocess.run(['cmake3', args.srcdir], check=True)
+    subprocess.run(['cmake3', '--build', '.'], check=True)
 
     # Where the exe ends up depends on the OS.
     if os.name == 'nt':
